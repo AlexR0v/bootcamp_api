@@ -9,11 +9,11 @@ const {
 
 const router = express.Router()
 
-router.route('/')
+router.route('/bootcamps')
   .get(getBootcamps)
   .post(createBootcamp)
 
-router.route('/:id')
+router.route('/bootcamps/:id')
   .get(getBootcamp)
   .put(updateBootcamp)
   .delete(deleteBootcamp)
